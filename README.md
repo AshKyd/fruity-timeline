@@ -6,6 +6,8 @@ An editable timeline implementation. Influenced by the oldschool
 sequencer project I'm working on, but you could probably use it
 for things like video editing etc.
 
+[Try the demo](https://ashkyd.github.io/fruity-timeline/)
+
 Usage
 -----
 
