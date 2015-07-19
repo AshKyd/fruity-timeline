@@ -1,0 +1,11 @@
+{
+  "name": "fruity-timeline",
+  "version": "1.0.0",
+  "description": "A timeline ala the old school Fruity Loops music sequencer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ash Kyd <ash@kyd.com.au>",
+  "license": "ISC"
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Fruity timeline demo</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+		<script src="index.js"></script>
+		<script>
+		addEventListener('load', function(){
+			// Create a new timeline
+			var t = new Timeline({
+
+				// These are the rows that will be shown.
+			    rows: [
+			        {name: 'drum', length:'1'},
+			        {name: 'cymbal', length:'1'},
+			        {name: 'bassline', length:'4'},
+			        {name: 'keytar', length:'1'},
+			        {name: 'harmonium', length:'1'},
+			    ],
+
+				// This specifies which items are lit up at each column.
+			    data: [
+			        ['drum', 'bassline'],
+			        ['drum'],
+			        ['drum','cymbal'],
+			        ['drum'],
+			        ['drum', 'bassline'],
+			        ['drum'],
+			        ['drum','cymbal'],
+			        ['drum']
+			    ],
+
+				// Specify a (max) width here.
+			    width:4*10
+			});
+
+			// Then chuck it in the page.
+			document.body.appendChild(t.el[0]);
+		});
+		</script>
+	</head>
+	<body>
+		<h1>Fruity timeline</h1>
+		<p>Style influenced by the oldschool
+		<a href="https://www.google.com.au/search?q=fruity+loops+studio&tbm=isch">Fruity Loops interface</a>
+		but you can style it however you want.</p>
+
+	</body>
+</html>

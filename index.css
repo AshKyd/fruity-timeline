@@ -1,0 +1,82 @@
+.timeline {
+    width: 100%;
+    overflow: auto;
+    background: #60686d;
+}
+
+.timeline table{
+    border-collapse:separate;
+    border-spacing:5px 10px;
+}
+
+.timeline th {
+    background: #86527d;
+    color: rgba(255,255,255,.9);
+    font-weight:normal;
+    font-family:sans-serif;
+    text-align:right;
+    padding:0 .3em;
+    border:1px solid black;
+    box-shadow:0 3px 2px rgba(0,0,0,.2);
+    position:relative;
+    border-radius:2px;
+    font-size:10px;
+}
+
+.timeline th::before{
+    content:"";
+    position:absolute;
+    display:block;
+    border:1px solid rgba(255,255,255,.1);
+    border-color: rgba(255,255,255,.2) rgba(255,255,255,.1) rgba(255,255,255,.1);
+    border-radius:2px;
+    left:1px;
+    right:1px;
+    top:1px;
+    bottom:1px;
+}
+
+.timeline td {
+    background:#4b5053;
+    border:1px solid black;
+    border-width:1px 1px 2px;
+    border-radius:3px;
+    position:relative;
+    padding:0 7px;
+    height:22px;
+    box-shadow:0 3px 2px rgba(0,0,0,.2);
+    cursor:pointer;
+}
+
+.timeline td:nth-child(8n-2),
+.timeline td:nth-child(8n-1),
+.timeline td:nth-child(8n-0),
+.timeline td:nth-child(8n+1){
+    background-color:#594c4b;
+}
+
+.timeline td::before{
+    content:"";
+    position:absolute;
+    display:block;
+    border:1px solid rgba(255,255,255,.1);
+    border-color: rgba(255,255,255,.2) rgba(255,255,255,.1) rgba(255,255,255,.1);
+    border-radius:2px;
+    left:1px;
+    right:1px;
+    top:1px;
+    bottom:1px;
+    outline:1px solid rgba(0,0,0,.2);
+    background: linear-gradient(to bottom, rgba(255,255,255,.15) 0%,rgba(0,0,0,.1) 100%); /* W3C */
+}
+
+.timeline td:hover{
+    box-shadow:0 0 3px 1px rgba(255,255,255,.5);
+}
+.timeline td:active{
+    box-shadow:0 0 3px 1px rgba(255,255,255,1);
+}
+
+.timeline td.active {
+    background: #eee;
+}
